@@ -5,7 +5,7 @@ path=$HOME/$1
 
 if (( args > 0 )); then
 	if [[ -f $path ]]; then
-		sed -i "1cset \$wallpaper $path" $HOME/.config/sway/bg.sh
+		sed -i "1cset \$wallpaper $path" $HOME/.config/sway/wallpaper.sh
 	else
 		echo "Argument passed is not a valid path."
 	fi
